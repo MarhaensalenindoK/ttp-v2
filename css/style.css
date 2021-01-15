@@ -39,7 +39,7 @@ header.masthead {
 
 .layanan {
   background-color: #2f2f50;
-  color: black;
+  color: white;
 }
 .layanan .timeline-panel {
   opacity: 0;
@@ -51,11 +51,32 @@ header.masthead {
   transition: 1s;
 }
 .text-light {
-  opacity: 0.7;
+  opacity: 0.9;
 }
+
+.procuct {
+  background-color: #1b1b2f;
+}
+.product .team-member {
+  opacity: 0;
+  transform: translate(0, -40px);
+}
+.product .team-member.show {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: 1s;
+}
+
 #portfolio {
   color: white;
+  background-color: #2f2f50;
 }
-.portfolio-hover {
-  background: rgba(2, 3, 70, 0.74);
+.portfolio .portfolio-item {
+  opacity: 0;
+  transform: translate(0, -40px);
+}
+.portfolio .portfolio-item.show {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: 1s;
 }

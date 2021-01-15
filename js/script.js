@@ -70,7 +70,7 @@ $(window).scroll(function(){
 
 
     //Layanan
-    if(wScroll > $('.layanan').offset().top-20){
+    if(wScroll > $('.layanan').offset().top-120){
         $('.layanan .timeline-panel').each(function(i){
             setTimeout(function(){
                 $('.layanan .timeline-panel').eq(i).addClass('show');
@@ -79,4 +79,27 @@ $(window).scroll(function(){
         
     }
 
+    // Portfolio
+
+
+    if(wScroll > $('.portfolio').offset().top-120){
+        $('.portfolio .portfolio-item').each(function(i){
+            setTimeout(function(){
+                $('.portfolio .portfolio-item').eq(i).addClass('show');
+            },220*(i+1));
+        });
+        
+    }
+
+
+
+    // Product
+    if(wScroll > $('.product').offset().top-120){
+        $('.product .team-member').each(function(i){
+            setTimeout(function(){
+                $('.product .team-member').eq(i).addClass('show');
+            },220*(i+1));
+        });
+        
+    }
 });
