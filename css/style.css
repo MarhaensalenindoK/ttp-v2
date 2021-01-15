@@ -1,0 +1,61 @@
+body {
+  background-color: #1b1b2f;
+  color: white;
+}
+
+header.masthead {
+  height: 700px;
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../assets/img/header.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.pLeft,
+.pRight {
+  opacity: 0;
+  transform: translate(-50px, 0);
+  transition: 1.5s;
+}
+.pRight {
+  transform: translate(50px, 0);
+}
+.pLeft.pShow,
+.pRight.pShow {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.pembatas {
+  background-image: url(../assets/img/1.png);
+  height: 70px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.layanan {
+  background-color: #2f2f50;
+  color: black;
+}
+.layanan .timeline-panel {
+  opacity: 0;
+  transform: translate(0, -40px);
+}
+.layanan .timeline-panel.show {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: 1s;
+}
+.text-light {
+  opacity: 0.7;
+}
+#portfolio {
+  color: white;
+}
+.portfolio-hover {
+  background: rgba(2, 3, 70, 0.74);
+}
