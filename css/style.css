@@ -1,9 +1,64 @@
 body {
   background-color: #1b1b2f;
   color: white;
+  overflow-x: hidden;
 }
+/* HEADER OPTIONAL */
+/* HEADER 1 */
+.v-header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.masthead-subheading {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.masthead-heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.fullscreen-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.fullscreen-video-wrap video {
+  min-width: 100%;
+  min-height: 100%;
+}
+.header-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #1b1b2f;
+  z-index: 1;
+  opacity: 0.6;
+}
+.header-content {
+  z-index: 2;
+  margin: auto;
+  text-align: center;
+}
+/* HEADER 2 */
 
-header.masthead {
+/* header.masthead {
   height: 700px;
   padding-top: 10.5rem;
   padding-bottom: 6rem;
@@ -14,8 +69,8 @@ header.masthead {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-}
-
+} */
+/* END HEADER */
 .pLeft,
 .pRight {
   opacity: 0;
@@ -31,7 +86,7 @@ header.masthead {
   transform: translate(0, 0);
 }
 .pembatas {
-  background-image: url(../assets/img/1.png);
+  background-image: url(../assets/img/header-bg.jpg);
   height: 70px;
   background-attachment: fixed;
   background-size: cover;
@@ -79,4 +134,10 @@ header.masthead {
   opacity: 1;
   transform: translate(0, 0);
   transition: 1s;
+}
+.portfolio-modal {
+  color: yellow;
+}
+.modal-content {
+  background: #2f2f50;
 }
