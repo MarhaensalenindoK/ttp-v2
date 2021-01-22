@@ -5,7 +5,6 @@
     */
    (function ($) {
     "use strict"; // Start of use strict
-
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (
@@ -29,18 +28,15 @@
             }
         }
     });
-
     // Closes responsive menu when a scroll trigger link is clicked
     $(".js-scroll-trigger").click(function () {
         $(".navbar-collapse").collapse("hide");
     });
-
     // Activate scrollspy to add active class to navbar items on scroll
     $("body").scrollspy({
         target: "#mainNav",
         offset: 74,
     });
-
     // Collapse Navbar
     var navbarCollapse = function () {
         if ($("#mainNav").offset().top > 100) {
@@ -54,21 +50,13 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
-
-
-
 // VISI MISI
 $(window).on('load',function(){
     $('.pLeft').addClass('pShow');
     $('.pRight').addClass('pShow');
 });
-
 $(window).scroll(function(){
     var wScroll = $(this).scrollTop();
-
-   
-
-
     //Layanan
     if(wScroll > $('.layanan').offset().top-120){
         $('.layanan .timeline-panel').each(function(i){
@@ -78,10 +66,7 @@ $(window).scroll(function(){
         });
         
     }
-
     // Portfolio
-
-
     if(wScroll > $('.portfolio').offset().top-120){
         $('.portfolio .portfolio-item').each(function(i){
             setTimeout(function(){
@@ -90,9 +75,6 @@ $(window).scroll(function(){
         });
         
     }
-
-
-
     // Product
     if(wScroll > $('.product').offset().top-120){
         $('.product .team-member').each(function(i){
