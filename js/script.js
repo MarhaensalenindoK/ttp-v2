@@ -69,45 +69,45 @@ $(window).scroll(function () {
 // ! JSON
 
 // ? IMG PORTFOLIO
-function imgList() {
-  $.getJSON("json/index.json", function (data) {
-    let url = data.url;
-    // console.log(url);
-    $.each(url, function (i, data) {
-      $("#img-list").append(
-        `
-        <div class="col-lg-3">
-        <img src="assets/img/portfolio-adi/` +
-          data.url +
-          `" alt="" width="200px" class="photo">
-        </div>   `
-      );
-    });
-  });
-}
-imgList();
+// function imgList() {
+//   $.getJSON("json/index.json", function (data) {
+//     let url = data.url;
+//     // console.log(url);
+//     $.each(url, function (i, data) {
+//       $("#img-list").append(
+//         `
+//         <div class="col-lg-3">
+//         <img src="assets/img/portfolio-adi/` +
+//           data.url +
+//           `" alt="" width="200px" class="photo">
+//         </div>   `
+//       );
+//     });
+//   });
+// }
+// imgList();
 
-function klienList() {
-  $.getJSON("json/klien.json", function (data) {
-    let url = data.url;
-    console.log(url);
-    $.each(url, function (i, data) {
-      $("#list-klien").append(
-        `
-        <div class="col-md-3 col-sm-6 my-3">
-        <a href="#!"
-          >
-          <img width="150px"
-            class="img-fluid d-block mx-auto"
-            src="assets/img/logos/` +
-          data.url +
-          `"
-            alt=""
-        /></a>
-      </div>  `
-      );
-    });
-  });
-}
+// function klienList() {
+//   $.getJSON("json/klien.json", function (data) {
+//     let url = data.url;
+//     console.log(url);
+//     $.each(url, function (i, data) {
+//       $("#list-klien").append(
+//         `
+//         <div class="col-md-3 col-sm-6 my-3">
+//         <a href="#!"
+//           >
+//           <img width="150px"
+//             class="img-fluid d-block mx-auto"
+//             src="assets/img/logos/` +
+//           data.url +
+//           `"
+//             alt=""
+//         /></a>
+//       </div>  `
+//       );
+//     });
+//   });
+// }
 
-klienList();
+// klienList();
