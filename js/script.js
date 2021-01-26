@@ -58,9 +58,9 @@ $(window).scroll(function () {
     });
   }
   if (wScroll > $(".product").offset().top - 120) {
-    $(".product .team-member").each(function (i) {
+    $(".product .production").each(function (i) {
       setTimeout(function () {
-        $(".product .team-member").eq(i).addClass("show");
+        $(".product .production").eq(i).addClass("show");
       }, 220 * (i + 1));
     });
   }
