@@ -137,7 +137,7 @@ body {
   transition: 0.5s;
 }
 .photo:hover {
-  box-shadow: 15px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 15px 15px 10px rgba(250, 225, 2, 0.4);
 }
 .contact .card {
   opacity: 0;
