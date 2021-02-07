@@ -148,3 +148,6 @@ body {
   transform: translate(0, 0);
   transition: 1s;
 }
+footer {
+  height: 100px;
+}
