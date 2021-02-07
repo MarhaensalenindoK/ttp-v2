@@ -78,7 +78,7 @@ body {
   transition: 1s;
 }
 .pembatas {
-  background-image: url(../assets/img/portfolio-adi/huawei1.jpg);
+  background-image: url(../assets/img/TTPbackground.png);
   height: 70px;
   background-attachment: fixed;
   background-size: cover;
