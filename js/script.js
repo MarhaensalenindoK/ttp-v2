@@ -71,7 +71,7 @@ $(window).scroll(function () {
       }, 220 * (i + 1));
     });
   }
-  if (wScroll > $(".contact").offset().top - 120) {
+  if (wScroll > $(".contact").offset().top - 200) {
     $(".contact .card").each(function (i) {
       setTimeout(function () {
         $(".contact .card").eq(i).addClass("show");
